@@ -1,0 +1,21 @@
+{
+  "presets": [
+    "es2015-loose",
+    "stage-0",
+    "react"
+  ],
+  "plugins": [
+    "transform-decorators-legacy",
+    "transform-remove-strict-mode"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        [
+          "transform-es2015-modules-commonjs",
+          "add-module-exports"
+        ]
+      ]
+    }
+  }
+}

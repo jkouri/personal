@@ -18,6 +18,10 @@ app.use((req, res, next) => {
 });
 app.use(express.static(path.join(__dirname, 'dist')));
 
+router.get('/*', function(req, res) {
+  res.render('src/components/HomePage.jsx');
+})
+
 //register our routes (all prefixed with /api)
 app.use('/', router);
 
